@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embed Full Content</title>
+<style>
+iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<iframe src="https://slot.bonuscomparator.com?iframe=true" title="Embedded Content"></iframe>
+
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  var iframe = document.querySelector('iframe');
+  iframe.onload = function() {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  };
+});
+</script>
+
+</body>
+</html>
